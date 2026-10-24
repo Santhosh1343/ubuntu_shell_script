@@ -10,6 +10,8 @@ set -o
 set -e
 set -e
 
+# created a new branch and adding this line
+
 
 #Usage of EC2 instances 
 aws ec2 describe-instances
