@@ -8,6 +8,7 @@
 set -x
 set -o
 set -e
+set -e
 
 
 #Usage of EC2 instances 
