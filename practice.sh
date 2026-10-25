@@ -3,7 +3,7 @@
 
 R='\e[31m'
 G='\e[32m'
-N = '\e[0m'
+N= '\e[0m'
 
 my_name=$1
 habits=("coding" "playing" "reading" "sleeping")
@@ -25,4 +25,3 @@ all_function(){
 
 sudo dnf install vim -y
 all_function "vim"
-    
