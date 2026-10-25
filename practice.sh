@@ -1,9 +1,9 @@
 #!bin/bash
 
 
-R=\e[31m
-G=\e[32m
-N = \e[0m
+R='\e[31m'
+G='\e[32m'
+N = '\e[0m'
 
 my_name=$1
 habits=("coding" "playing" "reading" "sleeping")
@@ -17,11 +17,12 @@ fi
 all_function(){
     name =$1
     if [ $? == 0 ]; then
-        echo -e "$name installation ${G}Success"
+        echo -e "$name installation ${G}Success ${N}"
     else
-        echo -e "$name installation ${R}Failure"
+        echo -e "$name installation ${R}Failure ${N}"
     fi
 }
 
-sudo dnf install mysql -y
-all_function "mysql"
+sudo dnf install vim -y
+all_function "vim"
+    
