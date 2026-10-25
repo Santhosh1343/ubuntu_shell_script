@@ -23,5 +23,5 @@ all_function(){
     fi
 }
 
-dnf install mysql -y
+sudo dnf install mysql -y
 all_function "mysql"
