@@ -3,7 +3,7 @@
 
 R=\e[31m
 G=\e[32m
-
+N = \e[0m
 
 my_name=$1
 habits=("coding" "playing" "reading" "sleeping")
@@ -14,7 +14,8 @@ else
     echo "My name is not santhosh"
 fi
 
-all_function(name){
+all_function(){
+    name =$1
     if [ $? == 0 ]; then
         echo -e "$name installation ${G}Success"
     else
