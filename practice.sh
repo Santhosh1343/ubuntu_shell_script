@@ -1,5 +1,10 @@
 #!bin/bash
 
+
+R=\e[31m
+G=\e[32m
+
+
 my_name=$1
 habits=("coding" "playing" "reading" "sleeping")
 
@@ -8,3 +13,14 @@ if [ $1 == "santhosh" ]; then
 else
     echo "My name is not santhosh"
 fi
+
+all_function(name){
+    if [ $? == 0 ]; then
+        echo -e "$name installation ${G}Success"
+    else
+        echo -e "$name installation ${R}Failure"
+    fi
+}
+
+dnf install mysql -y
+all_function "mysql"
